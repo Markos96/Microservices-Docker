@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Random;
 
 @Service
-public class ItemService {
+public class ItemServiceFeign {
 
     private final ProductFeignClient productFeignClient;
 
-    public ItemService(ProductFeignClient productFeignClient) {
+    public ItemServiceFeign(ProductFeignClient productFeignClient) {
         this.productFeignClient = productFeignClient;
     }
 
